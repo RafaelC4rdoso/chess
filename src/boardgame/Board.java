@@ -47,7 +47,7 @@ public class Board {
 	
 	public Piece removePiece(Position position) {
 		if (!positionExists(position)) {
-			throw new BoardException("Invalid position");
+			throw new BoardException("Invalid position.");
 		}
 		if (piece(position) == null) {
 			return null;
@@ -68,7 +68,7 @@ public class Board {
 	
 	public boolean thereIsAPiece(Position position) {
 		if (!positionExists(position)) {
-			throw new BoardException("Invalid position");
+			throw new BoardException("Invalid position.");
 		}
 		return piece(position) != null;
 	}
